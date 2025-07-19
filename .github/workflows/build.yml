@@ -52,24 +52,24 @@ jobs:
         cpu_level: [avx2]
         # optimized: [true, false]
         optimized: [true]
-        exclude:
-        # MSVC only works on Windows.
-        - os: ubuntu-latest
-          compiler: msvc
-        - os: macos-latest
-          compiler: msvc
-        # GitHub servers seem to run on pre-Haswell CPUs. Attempting to use AVX2
-        # results in crashes.
-        - os: macos-latest
-          cpu_level: avx2
-        # Not testing with GCC on macOS.
-        - os: macos-latest
-          compiler: gcc
-        # Only testing with MSVC on Windows.
-        - os: windows-latest
-          compiler: clang
-        - os: windows-latest
-          compiler: gcc
+        # exclude:
+        # # MSVC only works on Windows.
+        # - os: ubuntu-latest
+        #   compiler: msvc
+        # - os: macos-latest
+        #   compiler: msvc
+        # # GitHub servers seem to run on pre-Haswell CPUs. Attempting to use AVX2
+        # # results in crashes.
+        # - os: macos-latest
+        #   cpu_level: avx2
+        # # Not testing with GCC on macOS.
+        # - os: macos-latest
+        #   compiler: gcc
+        # # Only testing with MSVC on Windows.
+        # - os: windows-latest
+        #   compiler: clang
+        # - os: windows-latest
+        #   compiler: gcc
         include:
         - compiler: clang
           CC: clang
