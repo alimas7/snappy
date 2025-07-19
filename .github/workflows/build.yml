@@ -27,7 +27,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 name: ci
-on: [push, pull_request]
+on: workflow_dispatch
 
 permissions:
   contents: read
