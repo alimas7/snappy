@@ -138,8 +138,8 @@ jobs:
     # - name: Test CMake installation
     #   run: cmake --build "${{ env.CMAKE_BUILD_DIR }}" --target install
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: snappy
-          path: .
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: snappy
+        path: .
