@@ -70,16 +70,16 @@ jobs:
         #   compiler: clang
         # - os: windows-latest
         #   compiler: gcc
-        include:
-        - compiler: clang
-          CC: clang
-          CXX: clang++
-        - compiler: gcc
-          CC: gcc
-          CXX: g++
-        - compiler: msvc
-          CC:
-          CXX:
+        # include:
+        # - compiler: clang
+        #   CC: clang
+        #   CXX: clang++
+        # - compiler: gcc
+        #   CC: gcc
+        #   CXX: g++
+        # - compiler: msvc
+        #   CC:
+        #   CXX:
 
     env:
       CMAKE_BUILD_DIR: ${{ github.workspace }}/build
